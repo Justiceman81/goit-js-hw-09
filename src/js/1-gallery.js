@@ -84,7 +84,6 @@ galleryElem.innerHTML = markup;
 
 import SimpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
-// console.log(SimpleLightbox);
 
 let gallery = new SimpleLightbox('.gallery a', {
   overlayOpacity: 0.9,
