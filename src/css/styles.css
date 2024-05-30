@@ -5,21 +5,21 @@
   |============================
 */
 @import url('./reset.css');
-@import url('./vite-promo.css');
-@import url('./header.css');
+@import url('./1-gallery.css');
+@import url('./2-form.css');
 
-:root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
 
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
+body a {
+  font-size: 48px;
+  transition: transform 150ms linear;
+}
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+body a:hover {
+  transform: scale(1.2);
 }
