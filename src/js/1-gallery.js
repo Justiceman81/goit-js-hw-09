@@ -1,3 +1,6 @@
+import SimpleLightbox from 'simplelightbox';
+import 'simplelightbox/dist/simple-lightbox.min.css';
+
 const images = [
   {
     preview:
@@ -81,9 +84,6 @@ const markup = imagesTemplate(images);
 const galleryElem = document.querySelector('.gallery');
 
 galleryElem.innerHTML = markup;
-
-import SimpleLightbox from 'simplelightbox';
-import 'simplelightbox/dist/simple-lightbox.min.css';
 
 let gallery = new SimpleLightbox('.gallery a', {
   overlayOpacity: 0.9,
