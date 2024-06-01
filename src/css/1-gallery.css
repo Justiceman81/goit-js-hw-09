@@ -8,7 +8,7 @@ body {
   padding: 100px 156px;
   gap: 48px 24px;
   width: 1440px;
-  height: 848px;
+  min-height: 848px;
   box-sizing: border-box;
 }
 .gallery-item {
