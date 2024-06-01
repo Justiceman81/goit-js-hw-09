@@ -1,54 +1,77 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
-
-.feedback-form {
-  border-radius: 8px;
-  padding: 24px;
-  min-width: 408px;
+* {
+  box-sizing: border-box;
 }
 
-.feedback-form label {
-  display: flex;
-  flex-direction: column;
-  row-gap: 8px;
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f4f4f4;
+}
+
+.feedback-form {
+  max-width: 408px;
+  padding: 24px;
+  background-color: #ffffff;
+  color: #2e2f42;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
+
+label {
+  display: block;
   margin-bottom: 8px;
 }
 
-.feedback-form input {
-}
-
-.feedback-form input,
-.feedback-form textarea {
+input {
+  display: block;
   width: 100%;
+  height: 40px;
+  margin-top: 8px;
+  padding: 8px 16px;
   border: 1px solid #808080;
   border-radius: 4px;
-  padding: 8px 16px;
-  outline: transparent;
+  background-color: transparent;
 }
 
-.feedback-form textarea {
-  height: 80px;
+textarea {
+  display: block;
+  width: 100%;
+  margin-top: 8px;
+  margin-bottom: 16px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  background-color: transparent;
   resize: none;
 }
 
-.feedback-form input:hover,
-.feedback-form input:focus,
-.feedback-form textarea:hover,
-.feedback-form textarea:focus {
-  border: 1px solid #000;
+input:hover,
+textarea:hover {
+  border: 1px solid #000000;
 }
-.feedback-form button {
-  border-radius: 8px;
-  padding: 8px 16px;
-  min-width: 95px;
-  height: 40px;
-  background: #4e75ff;
-  color: #ffffff;
-  margin-top: 8px;
-  transition: background-color 250ms linear;
+input:focus,
+textarea:focus {
   outline: transparent;
 }
+input::placeholder,
+textarea::placeholder {
+  color: #2e2f42;
+}
 
-.feedback-form button:hover,
-.feedback-form button:focus {
-  background-color: #6c8cff;
+button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  background: #4e75ff;
+  color: #ffffff;
+  outline: transparent;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
+button:hover,
+button:focus {
+  background: #6c8cff;
 }

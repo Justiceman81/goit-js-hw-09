@@ -1,12 +1,16 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+}
 .gallery {
   display: flex;
   flex-wrap: wrap;
+  list-style: none;
+  padding: 100px 156px;
   gap: 48px 24px;
-
-  padding-top: 24px;
-  padding-bottom: 24px;
+  width: 1440px;
+  height: 848px;
+  box-sizing: border-box;
 }
-
 .gallery-item {
   height: 200px;
   flex-grow: 1;
@@ -15,7 +19,6 @@
 .gallery-link {
   display: block;
   height: 100%;
-  box-shadow: 0 0 2px 1px #000000;
   transition: transform 250ms ease, box-shadow 250ms ease;
 }
 
@@ -31,7 +34,6 @@
   object-fit: cover;
 }
 
-/* ----------------------------------- */
 @media only screen and (min-width: 768px) {
   .gallery-item {
     width: calc((100% - 24px) / 2);
@@ -41,8 +43,6 @@
     flex-grow: 0;
   }
 }
-
-/* ----------------------------------- */
 
 @media only screen and (min-width: 1158px) {
   .gallery-item {
