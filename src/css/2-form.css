@@ -5,9 +5,9 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
+
   background-color: #f4f4f4;
 }
-
 .feedback-form {
   max-width: 408px;
   padding: 24px;
@@ -18,12 +18,10 @@ body {
   line-height: 1.5;
   letter-spacing: 0.04em;
 }
-
 label {
   display: block;
   margin-bottom: 8px;
 }
-
 input {
   display: block;
   width: 100%;
@@ -34,7 +32,6 @@ input {
   border-radius: 4px;
   background-color: transparent;
 }
-
 textarea {
   display: block;
   width: 100%;
@@ -45,7 +42,6 @@ textarea {
   background-color: transparent;
   resize: none;
 }
-
 input:hover,
 textarea:hover {
   border: 1px solid #000000;
@@ -58,8 +54,9 @@ input::placeholder,
 textarea::placeholder {
   color: #2e2f42;
 }
-
 button {
+  min-width: 86px;
+  height: 40px;
   padding: 8px 16px;
   border: none;
   border-radius: 8px;
